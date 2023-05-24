@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- nav = struktur HTML bagian paling atas (navigation bar)-->
+    <nav>
+        <h1>Katik</h1>
+        <p id="title">Kalkulator Matematika</p>
+        <a href="index.html" class="home-btn">
+            <p id="nav-home">HOME</p>
+        </a>
+    </nav>
+
+    <!-- content = user di minta untuk memilih terlebih dahulu di page ini antara persegi dan persegi panjang-->
+    <section id="content">
+        <h2>Welcome to Katik</h2>
+        <p class="lead">
+            Hai sobat! Selamat datang di Katik <i>Pocket Edition!</i><br/>
+            Katik adalah sebuah responsive web app sederhana untuk menghitung luas dan keliling bangun datar
+        </p>
+        <!-- struktur box container  -->
+        <div class="container">
+            <div class="display-container">
+                <a href="square.html"><div id="square" class="display"></div></a>
+                <h3>PERSEGI</h3>
+                <p class="desc">Persegi merupakan turunan dari segi empat yang mempunyai ciri khusus keempat sisinya sama panjang dan keempat sudutnya siku-siku (90°).</p>
+            </div>
+            <div class="display-container">
+                <a href="rectangle.html"><div id="rectangle" class="display"></div></a>
+                <h3>PERSEGI PANJANG</h3>
+                <p class="desc">Persegi panjang adalah jajargenjang yang salah satu sudutnya siku-siku.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

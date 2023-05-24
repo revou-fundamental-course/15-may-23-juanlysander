@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- nav -->
+    <nav>
+        <h1>Katik</h1>
+        <p id="title">Kalkulator Matematika</p>
+        <a href="index.html" class="home-btn">
+            <p id="nav-home">HOME</p>
+        </a>
+    </nav>
+
+    <!-- content -->
+    <section id="content">
+        <h2>Persegi <i>(Square)</i></h2>
+        <p class="lead">
+            Hai sobat! Perkenalkan, aku Persegi! <br>
+            Aku memiliki 4 sisi dengan panjang yang sama
+            Keempat sudutku bernilai 90° (siku-siku)
+        </p>
+        <div class="container">
+            <div class="content-box">
+                <div id="square-L" class="display">
+                    <p class="s s1">S</p>
+                    <p class="s s2">S</p>
+                    <p class="s s3">S</p>
+                    <p class="s s4">S</p>
+                </div>
+                <h3>LUAS PERSEGI</h3>
+                <div class="info">    
+                    <p class="desc">
+                        Rumus Luas <br>
+                        Persegi<br>
+                        L = S x S
+                    </p>
+                    <p class="desc">
+                        Keterangan:<br/>
+                        L = Luas<br/>
+                        S = Sisi
+                    </p>
+                </div>
+                <div class="content-box">
+                    <input type="text" id="sisi-luas" placeholder="Masukkan Nilai Sisi" />
+                    <p class="output" id="output_luas"></p>
+                    <button onclick="luasPersegi()" class="btn-hitung" id="hitung-luas">HITUNG</button>
+                    <button onclick="resetLuas()" class="reset">RESET</button>
+                </div>
+            </div>
+            <div class="content-box">
+                <div id="square-K" class="display">
+                    <p class="s s1">S</p>
+                    <p class="s s2">S</p>
+                    <p class="s s3">S</p>
+                    <p class="s s4">S</p>
+                </div>
+                <h3>KELILING PERSEGI</h3>
+                <div class="info">    
+                    <p class="desc">
+                        Rumus Keliling<br>
+                        Persegi<br/>
+                        K = 4 x S
+                    </p>
+                    <p class="desc">
+                        Keterangan:<br/>
+                        K = keliling<br/>
+                        S = Sisi
+                    </p>
+                </div>
+                <div class="content-box">
+                    <input type="text" id="sisi-keliling" placeholder="Masukkan Nilai Sisi" />
+                    <p class="output" id="output_keliling"></p>
+                    <button onclick="kelilingPersegi()" class="btn-hitung" id="hitung-keliling">HITUNG</button>
+                    <button onclick="resetKeliling()" class="reset">RESET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
