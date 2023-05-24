@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- nav -->
+    <nav>
+        <h1>Katik</h1>
+        <p id="title">Kalkulator Matematika</p>
+        <a href="index.html" class="home-btn">
+            <p id="nav-home">HOME</p>
+        </a>
+    </nav>
+
+    <!-- content -->
+    <section id="content">
+        <h2>Persegi Panjang <i>(Rectangle)</i></h2>
+        <p class="lead">
+            Hai sobat! Perkenalkan, aku Persegi Panjang! <br>
+            Aku memiliki 2 sisi dengan panjang yang sama dan 2 sisi lagi dengan lebar yang sama
+            Keempat sudutku bernilai 90° (siku-siku)
+        </p>
+        <div class="container">
+            <div class="content-box">
+                <div id="rectangle-L" class="display">
+                    <p class="s s1">P</p>
+                    <p class="s s2">l</p>
+                    <p class="s s3">l</p>
+                    <p class="s s4">P</p>
+                </div>
+                <h3>LUAS PERSEGI PANJANG</h3>
+                <div class="info">    
+                    <p class="desc">
+                        Rumus Luas <br>
+                        Persegi Panjang<br>
+                        L = P x l
+                    </p>
+                    <p class="desc">
+                        Keterangan:<br>
+                        L = Luas<br>
+                        P = Panjang<br>
+                        l = Lebar
+                    </p>
+                </div>
+                <div class="content-box">
+                    <input type="text" id="panjang-luas-pp" placeholder="Masukkan Panjang" />
+                    <input type="text" id="lebar-luas-pp" placeholder="Masukkan Lebar" />
+                    <p class="output" id="output_luas_pp"></p>
+                    <button onclick="luasPP()" class="btn-hitung" id="hitung-luas-pp">HITUNG</button>
+                    <button onclick="resetLuasPP()" class="reset">RESET</button>
+                </div>
+            </div>
+            <div class="content-box">
+                <div id="rectangle-K" class="display">
+                    <p class="s s1">P</p>
+                    <p class="s s2">l</p>
+                    <p class="s s3">l</p>
+                    <p class="s s4">P</p>
+                </div>
+                <h3>KELILING <br>PERSEGI PANJANG</h3>
+                <div class="info">    
+                    <p class="desc">
+                        Rumus Keliling<br>
+                        Persegi Panjang<br/>
+                        K = 2p + 2l
+                    </p>
+                    <p class="desc">
+                        Keterangan:<br/>
+                        K = keliling<br/>
+                        P = Panjang<br>
+                        l = Lebar
+                    </p>
+                </div>
+                <div class="content-box">
+                    <input type="text" id="panjang-keliling-pp" placeholder="Masukkan Panjang" />
+                    <input type="text" id="lebar-keliling-pp" placeholder="Masukkan Lebar" />
+                    <p class="output" id="output_keliling_pp"></p>
+                    <button onclick="kelilingPP()" class="btn-hitung" id="hitung-keliling-pp" >HITUNG</button>
+                    <button onclick="resetKelilingPP()" class="reset">RESET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
